@@ -1,0 +1,11 @@
+applications:
+- path: target/TomcatHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: ProjectX
+  host: ProjectX
+  disk_quota: 1024M
+  services:
+  - ProjectXDatabase
+  buildpack: java_buildpack
